@@ -1,0 +1,141 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3213255300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que estou na pagina inicial da Advatage Shopping",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.queEstouNaPaginaInicialDaAdvatageShopping()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1126416600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clico no menu users",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.clicoNoMenuUsers()"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-21T19:10:17.834Z",
+        "line": 19,
+        "name": "Deve efetuar um cadastro no site",
+        "description": "",
+        "id": "fazer-cadastro-e-login-no-advantage-online-shopping;deve-efetuar-um-cadastro-no-site;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5159042000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "seleciono CREATE NEW ACCOUNT",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.selecionoCREATENEWACCOUNT()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "sou redirecionado para a pagina de registro",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.souRedirecionadoParaAPaginaDeRegistro()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Preencho os campos obrigatorios 4 extendido 8 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 32
+                },
+                {
+                  "val": "8",
+                  "offset": 44
+                },
+                {
+                  "val": "3",
+                  "offset": 46
+                }
+              ],
+              "location": "steps.efetuarCadastroSteps.preenchoOsCamposObrigatoriosExtendido(java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 997700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "aceito as condicoes de uso",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.aceitoAsCondicoesDeUso()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em REGISTER",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.clicoEmREGISTER()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "sou redirecionado para a pagina inicial",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.souRedirecionadoParaAPaginaInicial()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Fazer cadastro e login no Advantage Online Shopping",
+    "description": "",
+    "id": "fazer-cadastro-e-login-no-advantage-online-shopping",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/efetuar_login.feature",
+    "tags": []
+  }
+]
