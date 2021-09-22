@@ -2,43 +2,52 @@ package steps;
 
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import pages.BasePage;
-import pages.InitialPage_PF;
-import utils.BrowserFactory;
 
 public class efetuarCadastroSteps {
 
-	WebDriver driver = BrowserFactory.iniciarBrowser();
-	BasePage pagBase = new BasePage(driver);
-	InitialPage_PF pagInicial = new InitialPage_PF(driver);
-	
-	@Dado("que estou na pagina inicial da Advatage Shopping")
-	public void queEstouNaPaginaInicialDaAdvatageShopping() {
-		pagBase.acessarAdvantageShopping();
+	private WebDriver driver;
+	BasePage basePg = new BasePage(driver);
+
+	@Before
+	public void setup() {
+		basePg.iniciarBrowser();
+	}
+
+	@After
+	public void tearDown() {
+//		basePg.encerraBrowser();
+	}
+
+	@Dado("que estou na pagina inicial da Advantage Shopping")
+	public void queEstouNaPaginaInicialDaAdvantageShopping() {
+		basePg.acessarAdvantageShopping();
 
 	}
 
 	@Quando("clico no menu users")
-	public void clicoNoMenuUsers() {
-		pagBase.clicarNoMenuUser();
-		
+	public void clicoNoMenuUsers()  {
+		basePg.clicarNoMenuUser();
+
 	}
 
 	@Quando("seleciono CREATE NEW ACCOUNT")
 	public void selecionoCREATENEWACCOUNT() throws InterruptedException {
-		
-		pagBase.criarNovaConta();
+
+//		pagBase.criarNovaConta();
 	}
 
 	@Entao("sou redirecionado para a pagina de registro")
 	public void souRedirecionadoParaAPaginaDeRegistro() {
 	}
 
-	@Entao("Preencho os campos obrigatorios {int} extendido {int} {int}")
-	public void preenchoOsCamposObrigatoriosExtendido(Integer int1, Integer int2, Integer int3) {
+	@Entao("Preencho os campos obrigatorios")
+	public void preenchoOsCamposObrigatorios() {
 	}
 
 	@Entao("aceito as condicoes de uso")

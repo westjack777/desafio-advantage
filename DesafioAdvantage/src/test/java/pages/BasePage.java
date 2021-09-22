@@ -3,13 +3,24 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class BasePage {
+import utils.BrowserFactory;
 
-	private WebDriver driver;
-//	InitialPage_PF pagInicial = new InitialPage_PF(driver);
+public class BasePage {
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
+	}
+
+	private WebDriver driver;
+	LandingPage_PF landPg;
+
+	public void iniciarBrowser() {
+		driver = BrowserFactory.iniciarBrowser();
+
+	}
+
+	public void encerraBrowser() {
+		driver.quit();
 	}
 
 	public void acessarAdvantageShopping() {
@@ -18,7 +29,8 @@ public class BasePage {
 
 	public void clicarNoMenuUser() {
 
-		driver.findElement(By.id("menuUser")).click();
+		landPg = new LandingPage_PF(driver);
+		landPg.clicarNoMenuUsuario();
 
 	}
 
