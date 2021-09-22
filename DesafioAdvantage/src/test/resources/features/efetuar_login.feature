@@ -8,7 +8,11 @@ Quando clico no menu users
 Cenario: Deve efetuar um cadastro no site
 E seleciono CREATE NEW ACCOUNT
 Entao sou redirecionado para a pagina de registro
-E Preencho os campos obrigatorios
+E Preencho os campos obrigatorios "<nome>""<email>""<senha>""<confirmar_senha>"
 E aceito as condicoes de uso
 E clico em REGISTER
 Entao sou redirecionado para a pagina inicial
+
+Exemplos:
+|	nome		|	email							|senha			|	confirmar_senha		|
+|	Wesley	|	teste@teste.com		|Abcde@123	|	Abcde@123					|

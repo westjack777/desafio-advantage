@@ -38,24 +38,27 @@ public class efetuarCadastroSteps {
 
 	@Quando("seleciono CREATE NEW ACCOUNT")
 	public void selecionoCREATENEWACCOUNT() throws InterruptedException {
-
-//		pagBase.criarNovaConta();
+		Thread.sleep(2000);
+		basePg.criarNovaConta();
 	}
 
 	@Entao("sou redirecionado para a pagina de registro")
 	public void souRedirecionadoParaAPaginaDeRegistro() {
 	}
 
-	@Entao("Preencho os campos obrigatorios")
-	public void preenchoOsCamposObrigatorios() {
+	@Entao("Preencho os campos obrigatorios {string}{string}{string}{string}")
+	public void preenchoOsCamposObrigatorios(String nome, String email, String senha, String confirmaSenha) {
+		basePg.preencherCadastro(nome,email,senha,confirmaSenha);
 	}
 
 	@Entao("aceito as condicoes de uso")
 	public void aceitoAsCondicoesDeUso() {
+		basePg.aceiterTermos();
 	}
 
 	@Entao("clico em REGISTER")
 	public void clicoEmREGISTER() {
+		basePg.efetuarCadastro();
 	}
 
 	@Entao("sou redirecionado para a pagina inicial")

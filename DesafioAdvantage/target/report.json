@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 831549300,
+              "duration": 1421344500,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1052253400,
+              "duration": 1075452500,
               "status": "passed"
             },
             "line": 6,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-22T16:33:57.021Z",
+        "start_timestamp": "2021-09-22T19:06:39.343Z",
         "before": [
           {
             "result": {
-              "duration": 2063338600,
+              "duration": 2258438500,
               "status": "passed"
             },
             "match": {
@@ -48,10 +48,10 @@
             }
           }
         ],
-        "line": 8,
+        "line": 18,
         "name": "Deve efetuar um cadastro no site",
         "description": "",
-        "id": "fazer-cadastro-e-login-no-advantage-online-shopping;deve-efetuar-um-cadastro-no-site",
+        "id": "fazer-cadastro-e-login-no-advantage-online-shopping;deve-efetuar-um-cadastro-no-site;;2",
         "after": [
           {
             "result": {
@@ -67,6 +67,7 @@
         "steps": [
           {
             "result": {
+              "duration": 4479999800,
               "status": "passed"
             },
             "line": 9,
@@ -78,7 +79,6 @@
           },
           {
             "result": {
-              "duration": 993800,
               "status": "passed"
             },
             "line": 10,
@@ -90,18 +90,37 @@
           },
           {
             "result": {
-              "duration": 409000,
+              "duration": 439047000,
               "status": "passed"
             },
             "line": 11,
-            "name": "Preencho os campos obrigatorios",
+            "name": "Preencho os campos obrigatorios \"Wesley\"\"teste@teste.com\"\"Abcde@123\"\"Abcde@123\"",
             "match": {
-              "location": "steps.efetuarCadastroSteps.preenchoOsCamposObrigatorios()"
+              "arguments": [
+                {
+                  "val": "\"Wesley\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"teste@teste.com\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Abcde@123\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Abcde@123\"",
+                  "offset": 68
+                }
+              ],
+              "location": "steps.efetuarCadastroSteps.preenchoOsCamposObrigatorios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "E "
           },
           {
             "result": {
+              "duration": 70323900,
               "status": "passed"
             },
             "line": 12,
@@ -113,6 +132,7 @@
           },
           {
             "result": {
+              "duration": 75637800,
               "status": "passed"
             },
             "line": 13,
@@ -124,7 +144,6 @@
           },
           {
             "result": {
-              "duration": 1110700,
               "status": "passed"
             },
             "line": 14,
