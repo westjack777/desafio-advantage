@@ -1,0 +1,176 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 998400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na pagina inicial da Advantage Shopping",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.queEstouNaPaginaInicialDaAdvantageShopping()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2415374800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clico no menu users",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.clicoNoMenuUsers()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 3791156200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico em criar nova conta",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.clicoEmCriarNovaConta()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "sou redirecionado para a pagina de registro",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.souRedirecionadoParaAPaginaDeRegistro()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-28T14:26:43.037Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3917044600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.efetuarCadastroSteps.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Não deve cadastrar um usuario que já esteja cadastrado",
+        "description": "",
+        "id": "fazer-cadastro-no-advantage-online-shopping;não-deve-cadastrar-um-usuario-que-já-esteja-cadastrado",
+        "after": [
+          {
+            "result": {
+              "duration": 27300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.efetuarCadastroSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 434148000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "preencho os campos obrigatorios \"Wesley\"\"teste@teste.com\"\"Abcde@123\"\"Abcde@123\t\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wesley\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"teste@teste.com\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Abcde@123\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Abcde@123\t\"",
+                  "offset": 68
+                }
+              ],
+              "location": "steps.efetuarCadastroSteps.preenchoOsCamposObrigatorios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 117862100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "aceito as condicoes de uso",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.aceitoAsCondicoesDeUso()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 67411200,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "clico em registrar",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.clicoEmRegistrar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 220409200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "verifico a mensagem de usuario já existente",
+            "match": {
+              "location": "steps.efetuarCadastroSteps.verificoAMensagemDeUsuarioJáExistente()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cadastro"
+          },
+          {
+            "name": "@usuario_existente"
+          }
+        ]
+      }
+    ],
+    "name": "Fazer cadastro no Advantage Online Shopping",
+    "description": "Como usuário desejo\ndeseje me cadastrar\npara acessar o Advantage Shopping",
+    "id": "fazer-cadastro-no-advantage-online-shopping",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/efetuar_login.feature",
+    "tags": []
+  }
+]
