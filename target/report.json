@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1993600,
+              "duration": 996700,
               "status": "passed"
             },
             "line": 10,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 931216700,
+              "duration": 1408943800,
               "status": "passed"
             },
             "line": 11,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 4019089700,
+              "duration": 4411810200,
               "status": "passed"
             },
             "line": 12,
@@ -59,11 +59,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-25T16:39:08.752Z",
+        "start_timestamp": "2021-10-25T16:50:18.594Z",
         "before": [
           {
             "result": {
-              "duration": 3026759100,
+              "duration": 2958796800,
               "status": "passed"
             },
             "match": {
@@ -78,6 +78,7 @@
         "after": [
           {
             "result": {
+              "duration": 756802100,
               "status": "passed"
             },
             "match": {
@@ -90,7 +91,7 @@
         "steps": [
           {
             "result": {
-              "duration": 436453900,
+              "duration": 475554600,
               "status": "passed"
             },
             "line": 39,
@@ -120,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 118275900,
+              "duration": 123814100,
               "status": "passed"
             },
             "line": 40,
@@ -132,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 81781200,
+              "duration": 75687300,
               "status": "passed"
             },
             "line": 41,
@@ -144,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 209010000,
+              "duration": 170873300,
               "status": "passed"
             },
             "line": 42,
@@ -157,6 +158,9 @@
         ],
         "tags": [
           {
+            "name": "@cadastro"
+          },
+          {
             "name": "@usuario_existente"
           }
         ]
@@ -166,7 +170,7 @@
     "description": "Como usuário desejo\ndeseje me cadastrar\npara acessar o Advantage Shopping",
     "id": "fazer-cadastro-no-advantage-online-shopping",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/efetuar_login.feature",
+    "uri": "file:src/test/resources/features/efetuar_cadastro.feature",
     "tags": []
   }
 ]

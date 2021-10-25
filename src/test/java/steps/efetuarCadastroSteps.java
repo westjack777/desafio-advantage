@@ -24,7 +24,7 @@ public class efetuarCadastroSteps {
 
 	@After
 	public void tearDown() {
-//		basePg.encerraBrowser();
+		basePg.encerraBrowser();
 	}
 
 	@Dado("que estou na pagina inicial da Advantage Shopping")

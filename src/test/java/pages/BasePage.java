@@ -54,7 +54,8 @@ public class BasePage {
 		newAccountPg.preencherPasswordCadastro(pass, confirmPass);
 	}
 
-	public void preencherCadastroCompleto(String username, String email, String pass, String confirmPass, String nome, String sobrenome, String telefone, String cidade, String endereco, String estado, String CEP) {
+	public void preencherCadastroCompleto(String username, String email, String pass, String confirmPass, String nome,
+			String sobrenome, String telefone, String cidade, String endereco, String estado, String CEP) {
 		newAccountPg = new NewAccountPage_PF(driver);
 		newAccountPg.preencherUsernameCadastro(username);
 		newAccountPg.preencherEmailCadastro(email);
@@ -63,11 +64,11 @@ public class BasePage {
 		newAccountPg.preencherSobrenomeCadastro(sobrenome);
 		newAccountPg.preencherTelefoneCadastro(telefone);
 		newAccountPg.selecionarPais();
-		newAccountPg.preencherCidadeCadastro(cidade);		
+		newAccountPg.preencherCidadeCadastro(cidade);
 		newAccountPg.preencherEnderecoCadastro(endereco);
 		newAccountPg.preencherEstadoCadastro(estado);
 		newAccountPg.preencherCEPCadastro(CEP);
-		
+
 	}
 
 	public void aceitarTermos() {
@@ -84,11 +85,11 @@ public class BasePage {
 		setCurrentURL(driver.getCurrentUrl());
 
 	}
-	
+
 	public String validarRepetido() {
 		String jaExistente = newAccountPg.usuarioExistente();
 		return jaExistente;
-		
+
 	}
 
 	public String getCurrentURL() {
