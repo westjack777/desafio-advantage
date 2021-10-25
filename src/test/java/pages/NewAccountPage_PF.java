@@ -92,6 +92,35 @@ public class NewAccountPage_PF {
 		selectCountry.selectByVisibleText("Brazil");
 	}
 	
+	public void preencherNomeCadastro(String arg) {
+		firstName.sendKeys(arg);
+	}
+	
+	public void preencherSobrenomeCadastro(String arg) {
+		lastName.sendKeys(arg);
+	}
+	
+	public void preencherCidadeCadastro(String arg) {
+		city.sendKeys(arg);
+	}
+	
+	public void preencherTelefoneCadastro(String arg) {
+		phone.sendKeys(arg);
+	}
+	
+	public void preencherEnderecoCadastro(String arg) {
+		address.sendKeys(arg);
+	}
+	
+	public void preencherEstadoCadastro(String arg) {
+		stateRegionProvince.sendKeys(arg);
+	}
+	
+	public void preencherCEPCadastro(String arg) {
+		postalCode.sendKeys(arg);
+	}
+	
+	
 	public String usuarioExistente() {
 		String msg = null;
 		msg = driver.findElement(By.xpath("//*[contains(text(),'User name already exists')]")).getText();

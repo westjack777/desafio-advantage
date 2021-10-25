@@ -54,12 +54,13 @@ public class efetuarCadastroSteps {
 			basePg.preencherCadastroSimples(nome, email, senha, confirmaSenha);
 		}
 	
-	@Entao("preencho todos os campos {string}{string}{string}{string}")
-	public void preenchoTodosOsCampos(String nome, String email, String senha,
-			String confirmaSenha) {
-		basePg.preencherCadastroCompleto(nome, email, senha, confirmaSenha);
+	@Entao("preencho todos os campos {string}{string}{string}{string} {string}{string}{string}{string}{string}{string}{string}")
+	public void preenchoTodosOsCampos(String username, String email, String senha,
+			String confirmaSenha, String nome, String sobrenome, String telefone, String cidade, String endereco, String estado,
+			String cep) {
+		basePg.preencherCadastroCompleto(username, email, senha, confirmaSenha, nome, sobrenome, telefone, cidade, endereco, estado, cep);
 	}
-
+	
 	@Entao("aceito as condicoes de uso")
 	public void aceitoAsCondicoesDeUso()  {
 		basePg.aceitarTermos();

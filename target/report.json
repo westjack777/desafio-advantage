@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 998400,
+              "duration": 1993600,
               "status": "passed"
             },
             "line": 10,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 2415374800,
+              "duration": 931216700,
               "status": "passed"
             },
             "line": 11,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 3791156200,
+              "duration": 4019089700,
               "status": "passed"
             },
             "line": 12,
@@ -59,11 +59,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-28T14:26:43.037Z",
+        "start_timestamp": "2021-10-25T16:39:08.752Z",
         "before": [
           {
             "result": {
-              "duration": 3917044600,
+              "duration": 3026759100,
               "status": "passed"
             },
             "match": {
@@ -71,14 +71,13 @@
             }
           }
         ],
-        "line": 39,
+        "line": 38,
         "name": "Não deve cadastrar um usuario que já esteja cadastrado",
         "description": "",
         "id": "fazer-cadastro-no-advantage-online-shopping;não-deve-cadastrar-um-usuario-que-já-esteja-cadastrado",
         "after": [
           {
             "result": {
-              "duration": 27300,
               "status": "passed"
             },
             "match": {
@@ -91,10 +90,10 @@
         "steps": [
           {
             "result": {
-              "duration": 434148000,
+              "duration": 436453900,
               "status": "passed"
             },
-            "line": 40,
+            "line": 39,
             "name": "preencho os campos obrigatorios \"Wesley\"\"teste@teste.com\"\"Abcde@123\"\"Abcde@123\t\"",
             "match": {
               "arguments": [
@@ -121,10 +120,10 @@
           },
           {
             "result": {
-              "duration": 117862100,
+              "duration": 118275900,
               "status": "passed"
             },
-            "line": 41,
+            "line": 40,
             "name": "aceito as condicoes de uso",
             "match": {
               "location": "steps.efetuarCadastroSteps.aceitoAsCondicoesDeUso()"
@@ -133,10 +132,10 @@
           },
           {
             "result": {
-              "duration": 67411200,
+              "duration": 81781200,
               "status": "passed"
             },
-            "line": 42,
+            "line": 41,
             "name": "clico em registrar",
             "match": {
               "location": "steps.efetuarCadastroSteps.clicoEmRegistrar()"
@@ -145,21 +144,18 @@
           },
           {
             "result": {
-              "duration": 220409200,
+              "duration": 209010000,
               "status": "passed"
             },
-            "line": 43,
-            "name": "verifico a mensagem de usuario já existente",
+            "line": 42,
+            "name": "verifico a mensagem de usuario ja existente",
             "match": {
-              "location": "steps.efetuarCadastroSteps.verificoAMensagemDeUsuarioJáExistente()"
+              "location": "steps.efetuarCadastroSteps.verificoAMensagemDeUsuarioJaExistente()"
             },
             "keyword": "Entao "
           }
         ],
         "tags": [
-          {
-            "name": "@cadastro"
-          },
           {
             "name": "@usuario_existente"
           }

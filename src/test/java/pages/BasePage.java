@@ -54,12 +54,20 @@ public class BasePage {
 		newAccountPg.preencherPasswordCadastro(pass, confirmPass);
 	}
 
-	public void preencherCadastroCompleto(String nome, String email, String pass, String confirmPass) {
+	public void preencherCadastroCompleto(String username, String email, String pass, String confirmPass, String nome, String sobrenome, String telefone, String cidade, String endereco, String estado, String CEP) {
 		newAccountPg = new NewAccountPage_PF(driver);
-		newAccountPg.preencherUsernameCadastro(nome);
+		newAccountPg.preencherUsernameCadastro(username);
 		newAccountPg.preencherEmailCadastro(email);
 		newAccountPg.preencherPasswordCadastro(pass, confirmPass);
+		newAccountPg.preencherNomeCadastro(nome);
+		newAccountPg.preencherSobrenomeCadastro(sobrenome);
+		newAccountPg.preencherTelefoneCadastro(telefone);
 		newAccountPg.selecionarPais();
+		newAccountPg.preencherCidadeCadastro(cidade);		
+		newAccountPg.preencherEnderecoCadastro(endereco);
+		newAccountPg.preencherEstadoCadastro(estado);
+		newAccountPg.preencherCEPCadastro(CEP);
+		
 	}
 
 	public void aceitarTermos() {
