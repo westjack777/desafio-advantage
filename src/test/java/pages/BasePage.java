@@ -99,5 +99,13 @@ public class BasePage {
 	public void setCurrentURL(String currentURL) {
 		CurrentURL = currentURL;
 	}
+	
+	public void inserirUsername(String username) {
+		loginPg.preencherUsername(username);
+	}
+	
+	public void inserirPassword(String password) {
+		loginPg.preencherUsername(password);
+	}
 
 }

@@ -30,6 +30,8 @@ public class LoginPage_PF {
 	}
 	
 	public void preencherUsername (String arg) {
+		WebDriverWait wait = new WebDriverWait(driver,3);
+		wait.until(ExpectedConditions.elementToBeClickable(txt_username));
 		txt_username.sendKeys(arg);
 	}
 	
