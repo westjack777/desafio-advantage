@@ -11,7 +11,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 1994600,
+=======
+              "duration": 996700,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 10,
@@ -23,7 +27,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 1569084000,
+=======
+              "duration": 1408943800,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 11,
@@ -35,7 +43,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 4945701300,
+=======
+              "duration": 4411810200,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 12,
@@ -47,7 +59,10 @@
           },
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 200700,
+=======
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 13,
@@ -60,11 +75,19 @@
         ]
       },
       {
+<<<<<<< HEAD:target/report.json
         "start_timestamp": "2021-10-25T17:19:27.788Z",
         "before": [
           {
             "result": {
               "duration": 5016767100,
+=======
+        "start_timestamp": "2021-10-25T16:50:18.594Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2958796800,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "match": {
@@ -79,7 +102,11 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 834666700,
+=======
+              "duration": 756802100,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "match": {
@@ -92,7 +119,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 542591200,
+=======
+              "duration": 475554600,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 39,
@@ -122,7 +153,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 131270900,
+=======
+              "duration": 123814100,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 40,
@@ -134,7 +169,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 107408200,
+=======
+              "duration": 75687300,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 41,
@@ -146,7 +185,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD:target/report.json
               "duration": 229086400,
+=======
+              "duration": 170873300,
+>>>>>>> 679d41e0f93262665e7e972b65918215e554598e:DesafioAdvantage/target/report.json
               "status": "passed"
             },
             "line": 42,
