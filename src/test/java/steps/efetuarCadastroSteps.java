@@ -15,17 +15,17 @@ public class efetuarCadastroSteps {
 
 	private WebDriver driver;
 	BasePage basePg = new BasePage(driver);
-
-	@Before
-	public void setup() {
-		basePg.iniciarBrowser();
-		basePg.acessarAdvantageShopping();
-	}
-
-	@After
-	public void tearDown() {
-		basePg.encerraBrowser();
-	}
+	
+//	@Before
+//	public void setup() {
+//		basePg.iniciarBrowser();
+//		basePg.acessarAdvantageShopping();
+//	}
+//
+//	@After
+//	public void tearDown() {
+//		basePg.encerraBrowser();
+//	}
 
 	@Dado("que estou na pagina inicial da Advantage Shopping")
 	public void queEstouNaPaginaInicialDaAdvantageShopping() {
@@ -49,20 +49,19 @@ public class efetuarCadastroSteps {
 	}
 
 	@Entao("preencho os campos obrigatorios {string}{string}{string}{string}")
-	public void preenchoOsCamposObrigatorios(String nome, String email, String senha,
-			String confirmaSenha) {
-			basePg.preencherCadastroSimples(nome, email, senha, confirmaSenha);
-		}
-	
-	@Entao("preencho todos os campos {string}{string}{string}{string} {string}{string}{string}{string}{string}{string}{string}")
-	public void preenchoTodosOsCampos(String username, String email, String senha,
-			String confirmaSenha, String nome, String sobrenome, String telefone, String cidade, String endereco, String estado,
-			String cep) {
-		basePg.preencherCadastroCompleto(username, email, senha, confirmaSenha, nome, sobrenome, telefone, cidade, endereco, estado, cep);
+	public void preenchoOsCamposObrigatorios(String nome, String email, String senha, String confirmaSenha) {
+		basePg.preencherCadastroSimples(nome, email, senha, confirmaSenha);
 	}
-	
+
+	@Entao("preencho todos os campos {string}{string}{string}{string} {string}{string}{string}{string}{string}{string}{string}")
+	public void preenchoTodosOsCampos(String username, String email, String senha, String confirmaSenha, String nome,
+			String sobrenome, String telefone, String cidade, String endereco, String estado, String cep) {
+		basePg.preencherCadastroCompleto(username, email, senha, confirmaSenha, nome, sobrenome, telefone, cidade,
+				endereco, estado, cep);
+	}
+
 	@Entao("aceito as condicoes de uso")
-	public void aceitoAsCondicoesDeUso()  {
+	public void aceitoAsCondicoesDeUso() {
 		basePg.aceitarTermos();
 	}
 
@@ -74,13 +73,13 @@ public class efetuarCadastroSteps {
 	@Entao("sou redirecionado para a area logada")
 	public void souRedirecionadoParaAAreaLogada() throws Exception {
 		basePg.validarCadastro();
-		Assert.assertEquals(Constants.URL_HOME,basePg.getCurrentURL());
+		Assert.assertEquals(Constants.URL_HOME, basePg.getCurrentURL());
 	}
-	
+
 	@Entao("verifico a mensagem de usuario ja existente")
 	public void verificoAMensagemDeUsuarioJaExistente() {
 		Assert.assertEquals(Constants.MSG_USUARIO_EXISTENTE, basePg.validarRepetido());
-		
+
 	}
 
 }

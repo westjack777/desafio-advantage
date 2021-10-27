@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 		features = "src/test/resources/features/", 
 		glue = {"steps"}, 
-		tags = "@usuario_existente",
+		tags = "@cadastro",
 		plugin = {
 				"html:target/report-html",
 				"json:target/report.json" },
