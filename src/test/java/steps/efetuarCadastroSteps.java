@@ -3,8 +3,6 @@ package steps;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;

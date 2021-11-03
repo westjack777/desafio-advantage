@@ -1,13 +1,10 @@
 package runners;
 
-import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
-import pages.BasePage;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(

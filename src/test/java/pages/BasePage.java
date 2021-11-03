@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.BrowserFactory;
@@ -100,12 +101,21 @@ public class BasePage {
 		CurrentURL = currentURL;
 	}
 	
-	public void inserirUsername(String username) {
-		loginPg.preencherUsername(username);
+	public void inserirUsername(String user) {
+		driver.findElement(By.name("username")).sendKeys(user);
 	}
 	
-	public void inserirPassword(String password) {
-		loginPg.preencherUsername(password);
+	public void inserirPassword(String pass) {
+		driver.findElement(By.name("password")).sendKeys(pass);
+	}
+	
+	public void clickSignIn ()  {
+		driver.findElement(By.xpath("//*[@id='sign_in_btnundefined']")).click();
+	}
+	
+	public String checkUsername() {
+		String username = driver.findElement(By.xpath("//span[@class='hi-user containMiniTitle ng-binding']")).getText();
+		return username;
 	}
 
 }

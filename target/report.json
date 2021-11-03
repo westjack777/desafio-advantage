@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1995000,
+              "duration": 2710100,
               "status": "passed"
             },
             "line": 11,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 949520900,
+              "duration": 1669650900,
               "status": "passed"
             },
             "line": 12,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-27T20:35:37.225Z",
+        "start_timestamp": "2021-11-03T15:00:11.387Z",
         "before": [
           {
             "result": {
-              "duration": 3216124400,
+              "duration": 3333077200,
               "status": "passed"
             },
             "match": {
@@ -48,7 +48,7 @@
             }
           }
         ],
-        "line": 25,
+        "line": 24,
         "name": "Deve fazer login com dados validos",
         "description": "",
         "id": "fazer-login-no-advantage-online-shopping;deve-fazer-login-com-dados-validos;;2",
@@ -57,7 +57,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5604592000,
+              "duration": 135722300,
               "status": "passed"
             },
             "line": 16,
@@ -75,9 +75,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (100a079fc80f95e68abaa5c05c68d673)] -\u003e xpath: //input[@name\u003d\u0027username\u0027]] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027RSI0139\u0027, ip: \u0027192.168.78.92\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\\Users\\WESLEY~1.SAL\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 100a079fc80f95e68abaa5c05c68d673\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat pages.LoginPage_PF.preencherUsername(LoginPage_PF.java:34)\r\n\tat pages.BasePage.inserirPassword(BasePage.java:108)\r\n\tat steps.efetuarLoginSteps.digitoUmaSenhaValida(efetuarLoginSteps.java:51)\r\n\tat ✽.digito uma senha valida \"Abcde@123\"(file:///C:/Users/wesley.sales/QA/DesafioAdvantage/src/test/resources/features/efetuar_login.feature:17)\r\n",
-              "duration": 3359808900,
-              "status": "failed"
+              "duration": 391090600,
+              "status": "passed"
             },
             "line": 17,
             "name": "digito uma senha valida \"Abcde@123\"",
@@ -94,7 +93,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 97568400,
+              "status": "passed"
             },
             "line": 18,
             "name": "clico em sign-in",
@@ -105,24 +105,19 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 239181700,
+              "status": "passed"
             },
             "line": 19,
-            "name": "sou redirecionado para a tela inicial",
+            "name": "verifico se o usuario eh exibido no topo da pagina \"Wesley\"",
             "match": {
-              "location": "steps.efetuarLoginSteps.souRedirecionadoParaATelaInicial()"
-            },
-            "keyword": "Entao "
-          },
-          {
-            "result": {
-              "duration": 477700,
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "verifico se meu usuario eh exibido no topo da pagina",
-            "match": {
-              "location": "steps.efetuarLoginSteps.verificoSeMeuUsuarioEhExibidoNoTopoDaPagina()"
+              "arguments": [
+                {
+                  "val": "\"Wesley\"",
+                  "offset": 51
+                }
+              ],
+              "location": "steps.efetuarLoginSteps.verificoSeMeuUsuarioEhExibidoNoTopoDaPagina(java.lang.String)"
             },
             "keyword": "E "
           }

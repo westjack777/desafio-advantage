@@ -13,10 +13,13 @@ public class LoginPage_PF {
 	@FindBy(how = How.XPATH, using = "//input[@name='username']")
 	private WebElement txt_username;
 	
+	@FindBy(how = How.NAME, using = "username")
+	private WebElement txt_username2;
+	
 	@FindBy(how = How.XPATH, using = "//input[@type='password']")
 	private WebElement txt_password;
 	
-	@FindBy(how = How.ID, using = "sign_in_btnundefined")
+	@FindBy(how = How.ID, using = "username")
 	private WebElement btn_signIn;
 	
 	@FindBy(how = How.LINK_TEXT , using = "CREATE NEW ACCOUNT")
@@ -27,20 +30,6 @@ public class LoginPage_PF {
 	public LoginPage_PF(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-	}
-	
-	public void preencherUsername (String arg) {
-		WebDriverWait wait = new WebDriverWait(driver,3);
-		wait.until(ExpectedConditions.elementToBeClickable(txt_username));
-		txt_username.sendKeys(arg);
-	}
-	
-	public void preencherPassword (String arg) {
-		txt_username.sendKeys(arg);
-	}
-	
-	public void signIn () {
-		btn_signIn.click();
 	}
 	
 	public void newAccount () {

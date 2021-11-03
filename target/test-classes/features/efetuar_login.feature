@@ -16,8 +16,7 @@ Cenario: Deve fazer login com dados validos
 E digito um usuario valido "<username>"
 E digito uma senha valida "<senha>"
 E clico em sign-in
-Entao sou redirecionado para a tela inicial
-E verifico se meu usuario eh exibido no topo da pagina
+E verifico se o usuario eh exibido no topo da pagina "<username>"
 
 
 Exemplos:

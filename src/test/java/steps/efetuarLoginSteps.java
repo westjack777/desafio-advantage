@@ -3,11 +3,9 @@ package steps;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
-import io.cucumber.java.pt.Entao;
 import pages.BasePage;
 import utils.Constants;
 
@@ -38,12 +36,8 @@ public class efetuarLoginSteps {
 	}
 
 	@E("digito um usuario valido {string}")
-	public void digitoUmUsuarioValido(String username) throws InterruptedException {
-		Thread.sleep(2000);
-		basePg.criarNovaConta();
-		System.out.println("estou aqui..");
-//		basePg.inserirUsername(username);
-		System.out.println("agora estou aqui..");
+	public void digitoUmUsuarioValido(String username) {
+		basePg.inserirUsername(username);
 	}
 
 	@E("digito uma senha valida {string}")
@@ -53,14 +47,12 @@ public class efetuarLoginSteps {
 
 	@E("clico em sign-in")
 	public void clicoEmSignIn() {
+		basePg.clickSignIn();
 	}
 
-	@Entao("sou redirecionado para a tela inicial")
-	public void souRedirecionadoParaATelaInicial() {
-	}
-
-	@E("verifico se meu usuario eh exibido no topo da pagina")
-	public void verificoSeMeuUsuarioEhExibidoNoTopoDaPagina() {
+	@E("verifico se o usuario eh exibido no topo da pagina {string}")
+	public void verificoSeMeuUsuarioEhExibidoNoTopoDaPagina(String username) {
+		Assert.assertEquals(username, basePg.checkUsername());
 	}
 
 }
